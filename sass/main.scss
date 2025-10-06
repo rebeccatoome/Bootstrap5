@@ -25,8 +25,12 @@ $utilities: map.merge(
   )
 );
 
-// Finally, load Bootstrap's main styles
-@use "../node_modules/bootstrap/scss/bootstrap" as *;
+@use "../node_modules/bootstrap/scss/bootstrap" with (
+  $theme-colors: map.merge(
+    bootstrap.$theme-colors,
+    $custom-theme-colors 
+  )
+);
 
 
 
