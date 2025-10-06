@@ -1,36 +1,20 @@
-// Load your custom variables first
-@use "custom-variables" as *;
+// _custom-variables.scss
+$primary: #c29938 !default;
+$light: #fbf5e5 !default;
 
 // Then load Bootstrap functions (needed for some things)
-@use "../node_modules/bootstrap/scss/functions" as *;
-@use "../node_modules/bootstrap/scss/variables" as *;
+@import "../node_modules/bootstrap/scss/functions" as ;
+@import "../node_modules/bootstrap/scss/variables" as ;
 
-// Override Bootstrap's $theme-colors by merging custom colors after variables are loaded
-$theme-colors: map.merge($theme-colors, $custom-theme-colors);
 
-// Extend utility API for background and text colors
-$utilities: map.merge(
-  $utilities,
-  (
-    "background-color": (
-      property: background-color,
-      class: bg,
-      values: $theme-colors
-    ),
-    "color": (
-      property: color,
-      class: text,
-      values: $theme-colors
-    )
-  )
-);
+$custom-theme-colors: (
+  "altlight": #f2ebfa,
+  "altdark": #522192
+) !default;
 
-@use "../node_modules/bootstrap/scss/bootstrap" with (
-  $theme-colors: map.merge(
-    bootstrap.$theme-colors,
-    $custom-theme-colors 
-  )
-);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 
 
