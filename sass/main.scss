@@ -1,6 +1,7 @@
 // _custom-variables.scss
 $primary: #c29938 !default;
 $light: #fbf5e5 !default;
+$zindex-offcanvas: 1095;
 
 // Then load Bootstrap functions (needed for some things)
 @import "../node_modules/bootstrap/scss/functions";
@@ -14,8 +15,8 @@ $custom-theme-colors: (
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-
 
 
