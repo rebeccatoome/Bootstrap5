@@ -3,8 +3,8 @@ $primary: #c29938 !default;
 $light: #fbf5e5 !default;
 
 // Then load Bootstrap functions (needed for some things)
-@import "../node_modules/bootstrap/scss/functions" as ;
-@import "../node_modules/bootstrap/scss/variables" as ;
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
 
 
 $custom-theme-colors: (
