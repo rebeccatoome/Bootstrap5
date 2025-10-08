@@ -270,7 +270,7 @@
 <section id="reviews" style="background-color: #e3edff; color: rgb(10, 0, 48);">
   <div class="container-lg">
     <div class="text-center">
-      <h2><i class="bi bi-stars text-altdark"></i> Book Reviews</h2>
+      <h2><i class="bi bi-stars text-success"></i> Book Reviews</h2>
       <p class="lead">What my students have said about the book...</p>
     </div>
   </div>
@@ -354,7 +354,8 @@
             <span class="input-group-text">
               <i class="bi bi-envelope-fill"></i>
             </span>
-            <input type="email" class="form-control" id="email" placeholder="e.g. mario@example.com" />
+            <input type="email" class="form-control" id="email" placeholder="e.g. mario@example.com"  onfocus="this.style.border='2px solid green'; this.style.boxShadow='0 0 5px green';" 
+       onblur="this.style.border=''; this.style.boxShadow='';" />
             <span class="input-group-text">
               <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
                 <i class="bi bi-question-circle text-muted"></i>
@@ -367,7 +368,8 @@
             <span class="input-group-text">
               <i class="bi bi-person-fill"></i>
             </span>
-            <input type="text" class="form-control" id="name" placeholder="e.g. mario" />
+            <input type="text" class="form-control" id="name" placeholder="e.g. mario"  onfocus="this.style.border='2px solid green'; this.style.boxShadow='0 0 5px green';" 
+       onblur="this.style.border=''; this.style.boxShadow='';" />
             <span class="input-group-text">
               <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
                 <i class="bi bi-question-circle text-muted"></i>
@@ -380,7 +382,8 @@
             <span class="input-group-text">
               <i class="bi bi-chat-right-dots-fill"></i>
             </span>
-            <select class="form-select" id="subject">
+            <select class="form-select" id="subject"  onfocus="this.style.border='2px solid green'; this.style.boxShadow='0 0 5px green';" 
+       onblur="this.style.border=''; this.style.boxShadow='';" >
               <option value="pricing" selected>Pricing query</option>
               <option value="content">Content query</option>
               <option value="other">Other query</option>
@@ -388,7 +391,8 @@
           </div>
 
           <div class="form-floating mb-4 mt-5">
-            <textarea id="query" class="form-control" style="height: 140px"></textarea>
+            <textarea id="query" class="form-control" style="height: 140px"  onfocus="this.style.border='2px solid green'; this.style.boxShadow='0 0 5px green';" 
+       onblur="this.style.border=''; this.style.boxShadow='';" ></textarea>
             <label for="query">Your query...</label>
           </div>
 
