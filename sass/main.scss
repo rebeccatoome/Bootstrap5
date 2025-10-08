@@ -1,12 +1,10 @@
-// _custom-variables.scss
-$primary: #c29938 !default;
-$light: #fbf5e5 !default;
+// Now override Bootstrap variables here
 $zindex-offcanvas: 1095;
+$primary: #c29938;
+$light: #fbf5e5;
 
-// Then load Bootstrap functions (needed for some things)
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
-
 
 $custom-theme-colors: (
   "altlight": #f2ebfa,
@@ -15,8 +13,6 @@ $custom-theme-colors: (
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
-
-
+// Finally import Bootstrap itself
 @import "../node_modules/bootstrap/scss/bootstrap";
-
 
