@@ -83,8 +83,8 @@
                 </a>
                 </div>
                 <div class="col-md-5 text-center d-none d-md-block">
-                    <span class="tt" data-bs-placement="bottom" title="Net Ninja Book COVER">
-                    <img class="img-fluid" src="assets/ebook-cover.png" alt="ebook cover">
+                    <span class="tt" data-bs-placement="bottom" title="White Lily">
+                    <img class="img-fluid" src="assets/whitelily.webp" alt="whitelily">
                     </span>
                 </div>
             </div>
@@ -163,7 +163,7 @@
     <div class="row my-5 g-5 justify-content-around align-items-center">
       <!-- Image Column -->
       <div class="col-6 col-lg-4">
-        <img src="assets/kindle.png" class="img-fluid" alt="ebook">
+        <img src="assets/whitelily2.webp" class="img-fluid" alt="White Lily">
       </div>
 
       <!-- Accordion Column -->
@@ -192,7 +192,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading-2">
               <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2" style="background-color: #e1e8ff; color: rgb(10, 0, 48);">
+                      data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2" style="background-color: #dfe6ff; color: rgb(10, 0, 48);">
                 Chapter 2 - Mastering CSS
               </button>
             </h2>
@@ -228,7 +228,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading-4">
               <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#chapter-4" aria-expanded="true" aria-controls="chapter-4" style="background-color: #e1e1ff; color: rgb(10, 0, 48);">
+                      data-bs-target="#chapter-4" aria-expanded="true" aria-controls="chapter-4" style="background-color: #dfe6ff; color: rgb(10, 0, 48);">
                 Chapter 4 - Storing Data (Firebase Databases)
               </button>
             </h2>
@@ -267,7 +267,7 @@
 </section>
 
     <!-- reviews list -->
-<section id="reviews" class="bg-altlight">
+<section id="reviews" style="background-color: #e3edff; color: rgb(10, 0, 48);">
   <div class="container-lg">
     <div class="text-center">
       <h2><i class="bi bi-stars text-altdark"></i> Book Reviews</h2>
@@ -402,7 +402,7 @@
 </section>
 
 <!-- get updates / modal trigger -->
-<section class="bg-light">
+<section style="background-color: #defade;">
   <div class="container">
     <div class="text-center">
       <h2>Stay in The Loop</h2>
@@ -414,7 +414,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus assumenda aliquam aliquid eveniet tempore necessitatibus eligendi beatae.
           Reprehenderit, nobis ratione numquam possimus vero, exercitationem adipisci labore perferendis laudantium repellat harum.
         </p>
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#reg-modal">
           Register for Updates
         </button>
       </div>
@@ -436,10 +436,11 @@
           Dolor, excepturi beatae dolores veritatis facere asperiores quas natus, saepe ut culpa veniam eligendi pariatur amet eveniet fuga!
         </p>
         <label for="modal-email" class="form-label">Your email address:</label>
-        <input type="email" class="form-control" id="modal-email" placeholder="e.g. mario@example.com" />
+        <input type="email" class="form-control" id="modal-email" placeholder="e.g. mario@example.com"   onfocus="this.style.border='2px solid green'; this.style.boxShadow='0 0 5px green';" 
+       onblur="this.style.border=''; this.style.boxShadow='';" />
       </div>
       <div class="modal-footer">
-        <button class="btn btn-primary">Submit</button>
+        <button class="btn btn-success">Submit</button>
       </div>
     </div>
   </div>
